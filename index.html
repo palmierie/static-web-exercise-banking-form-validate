@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Banking Form</title>
-  <link rel="stylesheet" type="text/css" href="validation.css">
+  <link rel="stylesheet" type="text/css" href="css/validation.css">
 </head>
 <body>
   <div>
@@ -42,11 +42,11 @@
       <input type="checkbox" value="Married">Married<br>
       <input type="checkbox" value="Loan will be co-signed">Loan will be co-signed<br>
       <p>Email Address</p>
-      <input type="text" name="email address">
+      <input id="email-address" type="email" name="email address" required>
       <p>Telephone Number</p>
-      <input type="text" name="Telephone Number">
+      <input id="phone" type="tel" minlength="10" name="Telephone Number" required>
       <p>LinkedIn URL</p>
-      <input type="text" name="LinkedIn URl"><br>
+      <input id="url" type="url" name="LinkedIn URl" pattern="https://www.linkedin.com/in/.+" size="60" required><br>
       <input type="submit" value="Submit">
     </form>
     <textarea name="Additional Comments" id="bankform" cols="30" rows="7">Enter any additional comments here...</textarea>
